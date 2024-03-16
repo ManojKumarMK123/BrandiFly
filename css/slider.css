@@ -1,0 +1,46 @@
+
+.slider_container{
+    width: 20vw;
+  height: 350px;
+  position: absolute;
+  /* transform: translate(-80%,-50%); */
+  /* top: ; */
+  /* left: 25%; */
+  overflow: hidden;
+  margin-left: 80px;
+  border: 10px solid #006fff;
+  border-radius: 8px;
+  box-shadow: 10px 25px 30px rgba(0,0,0,0.3);
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+
+.wrapper img{
+    width: 274px;
+    height: 350px;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    95%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translate(-400%) ;
+    }
+}
